@@ -1,0 +1,18 @@
+--- Sys-Hostname-FQDN-0.01/FQDN.xs.orig	2003-06-10 22:35:53.000000000 +0200
++++ Sys-Hostname-FQDN-0.01/FQDN.xs	2003-06-18 23:38:35.000000000 +0200
+@@ -58,12 +58,12 @@
+ 	STRLEN len;
+ 	unsigned char * dq;
+ 	union {
+-	    struct in_addr * inadr;
+-	    char * addr;
++	    struct in_addr inadr;
++	    char addr[4];
+ 	} naddr;
+     PPCODE:
+ 	dq = (unsigned char *)(SvPV(dotquad, len));
+-	inet_aton(dq,naddr.inadr);
++	inet_aton(dq,&naddr.inadr);
+ 	out = sv_newmortal();
+ 	out = newSVpv(naddr.addr,4);
+ 	ST(0) = out;
