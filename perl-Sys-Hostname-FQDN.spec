@@ -10,7 +10,7 @@ Summary(pl):	Sys::Hostname::FQDN - uzyskiwanie pe³nej nazwy hosta
 Name:		perl-Sys-Hostname-FQDN
 Version:	0.04
 Release:	1
-License:	GPL
+License:	GPL v2+
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	0b7ffa6e39156f8d519903f7e487d09d
