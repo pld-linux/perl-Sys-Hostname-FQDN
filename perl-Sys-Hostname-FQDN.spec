@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Sys
-%define	pnam	Hostname-FQDN
+%define		pdir	Sys
+%define		pnam	Hostname-FQDN
 Summary:	Sys::Hostname::FQDN - extract full host name
 Summary(pl):	Sys::Hostname::FQDN - uzyskiwanie pe³nej nazwy hosta
 Name:		perl-Sys-Hostname-FQDN
