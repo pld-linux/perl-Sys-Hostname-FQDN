@@ -8,12 +8,12 @@
 Summary:	Sys::Hostname::FQDN - extract full host name
 Summary(pl):	Sys::Hostname::FQDN - uzyskiwanie pe³nej nazwy hosta
 Name:		perl-Sys-Hostname-FQDN
-Version:	0.04
-Release:	1
+Version:	0.06
+Release:	0.1
 License:	GPL v2+
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	0b7ffa6e39156f8d519903f7e487d09d
+# Source0-md5:	f8244e600aea6f184ffe6450795d57be
 Patch0:		%{name}-segv.patch
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
@@ -39,7 +39,7 @@ funkcje biblioteki C inet_ntoa i inet_aton.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
-%patch -p1
+#%patch -p1
 
 %build
 %{__perl} Makefile.PL \
@@ -63,9 +63,10 @@ rm -rf $RPM_BUILD_ROOT
 %doc Changes README
 %dir %{perl_vendorarch}/Sys/Hostname
 %{perl_vendorarch}/Sys/Hostname/FQDN.pm
-%dir %{perl_vendorarch}/auto/Sys/Hostname
-%dir %{perl_vendorarch}/auto/Sys/Hostname/FQDN
-%{perl_vendorarch}/auto/Sys/Hostname/FQDN/autosplit.ix
-%{perl_vendorarch}/auto/Sys/Hostname/FQDN/FQDN.bs
+# do we really need these ?
+#%dir %{perl_vendorarch}/auto/Sys/Hostname
+#%dir %{perl_vendorarch}/auto/Sys/Hostname/FQDN
+#%{perl_vendorarch}/auto/Sys/Hostname/FQDN/autosplit.ix
+#%{perl_vendorarch}/auto/Sys/Hostname/FQDN/FQDN.bs
 %attr(755,root,root) %{perl_vendorarch}/auto/Sys/Hostname/FQDN/FQDN.so
 %{_mandir}/man3/*
