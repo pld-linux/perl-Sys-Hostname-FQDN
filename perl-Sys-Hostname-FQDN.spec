@@ -6,7 +6,7 @@
 %define		pdir	Sys
 %define		pnam	Hostname-FQDN
 Summary:	Sys::Hostname::FQDN - extract full host name
-Summary(pl):	Sys::Hostname::FQDN - uzyskiwanie pe³nej nazwy hosta
+Summary(pl.UTF-8):   Sys::Hostname::FQDN - uzyskiwanie peÅ‚nej nazwy hosta
 Name:		perl-Sys-Hostname-FQDN
 Version:	0.07
 Release:	1
@@ -28,13 +28,13 @@ The results from gethostbyname are exported as gethostinfo and
 asciihostinfo as a convenience since they are available. Similarly,
 the C library functions inet_ntoa and inet_aton are exported.
 
-%description -l pl
-Sys::Hostname::FQDN u¿ywa biblioteki C do uzyskania (zwykle) krótkiej
-nazwy hosta, a nastêpnie u¿ywa (perlowej) funkcji gethostbyname aby
-uzyskaæ prawdziw± nazwê hosta.
+%description -l pl.UTF-8
+Sys::Hostname::FQDN uÅ¼ywa biblioteki C do uzyskania (zwykle) krÃ³tkiej
+nazwy hosta, a nastÄ™pnie uÅ¼ywa (perlowej) funkcji gethostbyname aby
+uzyskaÄ‡ prawdziwÄ… nazwÄ™ hosta.
 
-Wyniki z gethostbyname s± dla wygody eksportowane jako gethostinfo i
-asciihostinfo, poniewa¿ s± dostêpne. Podobnie s± wyeksportowane
+Wyniki z gethostbyname sÄ… dla wygody eksportowane jako gethostinfo i
+asciihostinfo, poniewaÅ¼ sÄ… dostÄ™pne. Podobnie sÄ… wyeksportowane
 funkcje biblioteki C inet_ntoa i inet_aton.
 
 %prep
