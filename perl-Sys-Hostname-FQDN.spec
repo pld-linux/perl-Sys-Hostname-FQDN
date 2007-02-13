@@ -6,7 +6,7 @@
 %define		pdir	Sys
 %define		pnam	Hostname-FQDN
 Summary:	Sys::Hostname::FQDN - extract full host name
-Summary(pl.UTF-8):   Sys::Hostname::FQDN - uzyskiwanie pełnej nazwy hosta
+Summary(pl.UTF-8):	Sys::Hostname::FQDN - uzyskiwanie pełnej nazwy hosta
 Name:		perl-Sys-Hostname-FQDN
 Version:	0.07
 Release:	1
