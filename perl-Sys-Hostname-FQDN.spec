@@ -12,9 +12,10 @@ Version:	0.07
 Release:	2
 License:	GPL v2+
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Sys/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	ab6b00e3f0781b3e074daa53160d1815
 Patch0:		%{name}-segv.patch
+URL:		http://search.cpan.org/dist/Sys-Hostname-FQDN/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
