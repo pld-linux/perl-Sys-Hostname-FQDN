@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Sys
 %define		pnam	Hostname-FQDN
 Summary:	Sys::Hostname::FQDN - extract full host name
