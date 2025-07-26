@@ -8,7 +8,7 @@ Summary:	Sys::Hostname::FQDN - extract full host name
 Summary(pl.UTF-8):	Sys::Hostname::FQDN - uzyskiwanie pełnej nazwy hosta
 Name:		perl-Sys-Hostname-FQDN
 Version:	0.12
-Release:	7
+Release:	8
 License:	GPL v2+
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/Sys/%{pdir}-%{pnam}-%{version}.tar.gz
